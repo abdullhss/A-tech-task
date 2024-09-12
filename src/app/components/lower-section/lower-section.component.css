@@ -1,0 +1,153 @@
+.midSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.leftSection{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.leftSection > button{
+    background-color: #8A74F9;
+    border-radius: 10px;
+    padding: 10px;
+    color: #FFF;
+    font-size: 1rem;
+}
+.rightSection{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.rightSection > button {
+    padding: 0.5rem;
+    border-radius: 5px ;
+    cursor: pointer;    border: none;
+}
+.rightSection > div > input{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #8A74F9;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 6px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: #CCC;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.pi-file-pdf {
+    color: red;
+    font-size: 1.2em;
+}
+.p-table {
+    text-align: center;
+    direction: rtl;
+}
+th{
+    color : rgba(171, 170, 177, 1) ;
+    font-weight: normal;
+}
+.zise{
+    color : rgba(171, 170, 177, 1) ;
+    font-size: 14px;
+}
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+td a {
+    text-decoration: none;
+    color: #6c63ff;
+}
+.downloadTicket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .leftSection > button{
+        padding: 2px;
+        color: #FFF;
+        font-size: 14px;
+    }
+    
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    }
+    .slider:before {
+        height: 12.5px;
+        width: 12.5px;
+    }
+    input:checked + .slider:before {
+        transform: translateX(22px);
+    }
+    .rightSection{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.7rem;
+    }
+    
+    .rightSection > button {
+        padding: 0.1rem;
+    }
+    .rightSection > div > input{
+        padding: 0.1rem;
+        width: 100% !important;
+    }
+}

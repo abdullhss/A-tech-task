@@ -1,0 +1,29 @@
+.UpperSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    height: 100%;
+}
+app-ticket{
+    width: 30%;
+    height: 100%;
+}
+app-graph{
+    right: 0;
+    width: 68%;
+    height: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .UpperSection{
+        flex-direction: column;
+    }
+    app-ticket{
+        width: 100%;
+    }
+    app-graph{
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

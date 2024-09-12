@@ -1,0 +1,128 @@
+.Ticket{
+    max-width: 100%;
+    max-height: 100%;
+    background-color:rgba(138, 116, 249, 1) ;
+    border-radius: 3%;
+    overflow: hidden;
+    position: relative;
+}
+.wave{
+    position: absolute;
+    background-color: rgba(94, 73, 199,0.3) ;
+    width: 100%;
+    height: 102%;
+    --mask:
+    radial-gradient(75.28px at 50% calc(100% + 62px),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 80px) calc(50% - 21.5px + .5px)/160px 43px ,
+    radial-gradient(75.28px at 50% -62px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 21.5px)/160px 43px ;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    transform: rotate(5deg);
+    z-index: 1;
+}
+.ndWave{
+    height: 50%;
+}
+.TicketUpper{
+    position: relative;
+    border-radius: 3%;
+    width: 100%;
+    height: 55%;
+    border-bottom: rgba(255, 255, 255, 0.4) dashed 4px;
+}
+.TicketLower{
+    border-radius: 3%;
+    width: 100%;
+    height: 45%;
+    
+}
+.leftCircle{
+    position: absolute;
+    background-color: rgba(235, 235, 235, 1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom: -15px;
+    left: -15px;
+    z-index: 10;
+}
+.rightCircle{
+    position: absolute;
+    background-color: rgba(235, 235, 235, 1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom: -15px;
+    right: -15px;
+    z-index: 10;
+}
+.TicketUpperContnet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 3% 5%;
+    color: white;
+    gap: 1rem;
+    z-index: 10;
+}
+.trach{
+    position: absolute;
+    padding: 3% 5%;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    z-index: 10;
+}
+.copycontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    padding: 2.5%;
+    border-radius: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+.copycontainer > span:first-child{
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.QRSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    height: 100%;
+}
+.qrcode{
+    height: 100;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 10;
+}
+.discount{
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+    color: white;
+}
+.discount > div{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    
+}
+.discount > button {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    height: 50%;
+    background-color: unset;
+    border: white solid 1px ;
+    padding: 2px  5px;
+    border-radius: 5px;
+    color: white;
+    z-index: 10;
+}
